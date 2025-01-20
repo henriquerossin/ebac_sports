@@ -24,7 +24,7 @@ function App() {
   const favoritos = useSelector((state: RootReducer) => state.favoritos.itens)
 
   useEffect(() => {
-    fetch('/ebac_sports')
+    fetch('https://fake-api-tau.vercel.app/api/ebac_sports')
       .then((res) => res.json())
       .then((res) => setProdutos(res))
   }, [])
